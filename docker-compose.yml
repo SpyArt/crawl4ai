@@ -11,7 +11,7 @@ x-base-config: &base-config
     - CLAUDE_API_KEY=${CLAUDE_API_KEY:-}
   volumes:
     - /dev/shm:/dev/shm
-    - /var/lib/docker/volumes/crawl4ai_projects:/app/crawl4ai_projects
+    - /root/crawl4ai_projects:/app/crawl4ai_projects
   deploy:
     resources:
       limits:
